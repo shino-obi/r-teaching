@@ -16,11 +16,11 @@ raw_patient_data <-
 
 
 # Q1: use pivot_longer() to create a column called "drug" with all antibiotic names
-#     - use a selection-helper function to select the columns
+
 
 patient_data <- 
   raw_patient_data %>% 
-  pivot_longer(cols = # use selection-helper,
+  pivot_longer(cols = # checkout the function starts_with() and try to use it,
                names_to = #,
                values_to = #,
                values_drop_na = TRUE)
