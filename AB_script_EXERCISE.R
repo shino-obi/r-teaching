@@ -15,7 +15,9 @@ raw_patient_data <-
   )
 
 
-# Q1: use pivot_longer() to create a column called "drug" with all antibiotic names
+# Q1: use pivot_longer() to create a column called "drug_" with all antibiotic names
+## advanced: try to use a selection-helper to select the drug columns
+## you can see available selection helpers, using: names(tidyselect::vars_select_helpers)
 
 patient_data <- 
   raw_patient_data %>% 
