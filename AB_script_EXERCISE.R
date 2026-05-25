@@ -17,13 +17,9 @@ raw_patient_data <-
 
 # Q1: use pivot_longer() to create a column called "drug" with all antibiotic names
 
-
 patient_data <- 
   raw_patient_data %>% 
-  pivot_longer(cols = # checkout the function starts_with() and try to use it,
-               names_to = #,
-               values_to = #,
-               values_drop_na = TRUE)
+  pivot_longer()
 
 
 # Q2: use mutate() to create the following variables:
@@ -34,11 +30,7 @@ patient_data <-
 
 calculated_doses <-
   patient_data %>%
-  mutate(preterm = # if_else(),
-         frequency_h = # case_when(),
-         weight_based_dose = #recode_values(),
-         dose = #
-  )
+  mutate()
 
 
 # Q3: for each drug get the highest calculated dose
